@@ -1,5 +1,8 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore } from '../adapters/redux-toolkit'
+import app from '../modules/app/store'
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    app
+  },
 })
